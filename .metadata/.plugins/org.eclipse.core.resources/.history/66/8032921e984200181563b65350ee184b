@@ -1,0 +1,13 @@
+//***************************************
+// StyleOptionsPanel.java
+// 
+// Demonstrates the use of checkboxes
+//**************************************
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class StyleOptionsPanel {
+
+}

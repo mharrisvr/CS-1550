@@ -1,0 +1,31 @@
+//***************************************
+// StyleOptionsPanel.java
+// 
+// Demonstrates the use of checkboxes
+//**************************************
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class StyleOptionsPanel {
+	private int fontSize = 36;
+	private int style = Font.PLAIN;
+	private JLabel saying;
+	private JCheckBox bold, italic;
+	
+	//--------------------------------------------
+	// Sets up a panel with a label and some checkboxes
+	// that control style of the label's font.
+	//--------------------------------------------------
+	public StyleOptionsPanel() {
+		saying = new JLabel("Say it with Style");
+		saying.setFont(new Font("Helvetica", style, fontSize));
+		
+		bold = new JCheckBox("Bold");
+		bold.setBackground(Color.cyan);
+		
+		italic = new JCheckBox("Italic");
+		italic.setBackground(Color.cyan);
+	}
+}

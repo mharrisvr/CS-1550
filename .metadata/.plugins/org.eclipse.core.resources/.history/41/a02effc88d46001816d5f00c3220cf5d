@@ -1,0 +1,34 @@
+//**********************************
+// LetterCount.java
+// 
+//***********************************
+
+import java.util.Scanner;
+
+public class LetterCount {
+	//-----------------------------------------------------------
+	// Reads a sentence from the user and counts the number of
+	// uppercase and lowercase letters contained in it. 
+	//------------------------------------------------------------
+	public static void main(String[] args) {
+		final int NUMCHARS = 26;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int[] upper = new int[NUMCHARS];
+		int[] lower = new int[NUMCHARS];
+		
+		char current;  // the current character being processed. 
+		int other = 0; // counter for non-alphabetics
+		
+		System.out.println("Enter a sentence: ");
+		String line = scan.nextLine();
+		
+		// Count the number of each letter ocurrence
+		for(int ch = 0; ch < line.length(); ch++ ) {
+			current = line.charAt(ch);
+			if (current >= 'A' && current <= 'Z')
+				upper[current-'A']++;
+		}
+	}
+}
